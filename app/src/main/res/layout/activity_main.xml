@@ -60,9 +60,33 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_take_photo"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/button_popup" />
+
+    <Button
+        android:id="@+id/button_open_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open list"
+        app:layout_constraintEnd_toStartOf="@+id/button_take_photo"
+        app:layout_constraintTop_toTopOf="@+id/button_take_photo" />
+
+    <Button
+        android:id="@+id/button_action_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action mode"
+        app:layout_constraintEnd_toStartOf="@+id/button_open_list"
+        app:layout_constraintTop_toTopOf="@+id/button_open_list" />
+
+    <Button
+        android:id="@+id/button_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show popup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_take_photo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
